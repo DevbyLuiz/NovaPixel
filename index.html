@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaPixel – Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Roboto:wght@400;500&family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <a href="#home" class="logo">NovaPixel</a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">Sobre Nós</a></li>
+      <li><a href="#services">Serviços</a></li>
+      <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="#testimonials">Depoimentos</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Abrir Menu">☰</button>
+  </nav>
+</header>
+
+<!-- Botão voltar ao topo -->
+<button id="back-to-top">↑</button>
+
+<!-- Home -->
+<section id="home" class="section home show">
+  <h1 class="home-title">Bem-vindo à NovaPixel</h1>
+  <p class="home-subtitle">Transformamos ideias em experiências digitais únicas.</p>
+  <a href="#contact" class="btn">Fale Conosco</a>
+</section>
+
+<!-- Sobre Nós -->
+<section id="about" class="section about show">
+  <h1 class="section-title">Sobre Nós</h1>
+  <p class="section-text">A NovaPixel é uma agência criativa dedicada a transformar ideias em soluções digitais completas. Contamos com profissionais especializados em design, desenvolvimento web e marketing digital, garantindo experiências inovadoras para cada cliente.</p>
+</section>
+
+<!-- Serviços -->
+<section id="services" class="section services show">
+  <h1 class="section-title">Nossos Serviços</h1>
+  <div class="service-cards">
+    <div class="card fade">
+      <h3 class="card-title">Design Gráfico</h3>
+      <p class="card-text">Criação de identidades visuais, logotipos e materiais gráficos profissionais.</p>
+      <a href="services-details.html#design" class="btn">Ver Projetos</a>
+    </div>
+    <div class="card fade">
+      <h3 class="card-title">Desenvolvimento Web</h3>
+      <p class="card-text">Sites responsivos e funcionais, com foco em UX/UI e performance.</p>
+      <a href="services-details.html#web" class="btn">Ver Projetos</a>
+    </div>
+    <div class="card fade">
+      <h3 class="card-title">Marketing Digital</h3>
+      <p class="card-text">Campanhas estratégicas de marketing e social media para aumentar resultados.</p>
+      <a href="services-details.html#marketing" class="btn">Ver Projetos</a>
+    </div>
+  </div>
+</section>
+
+<!-- Portfólio -->
+<section id="portfolio" class="section portfolio show">
+  <h1 class="section-title">Portfólio</h1>
+  <div class="portfolio-grid">
+    <div class="portfolio-item fade">
+      <div class="portfolio-bg">
+        <h4>Projeto 1</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+    <div class="portfolio-item fade">
+      <div class="portfolio-bg">
+        <h4>Projeto 2</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+    <div class="portfolio-item fade">
+      <div class="portfolio-bg">
+        <h4>Projeto 3</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Depoimentos -->
+<section id="testimonials" class="section testimonials show">
+  <h1 class="section-title">Depoimentos</h1>
+  <div class="testimonial-cards">
+    <div class="card fade">
+      <p>"A NovaPixel transformou completamente nosso site. Profissionais incríveis!"</p>
+      <h4>- Cliente Fictício 1</h4>
+    </div>
+    <div class="card fade">
+      <p>"Design moderno e funcional. Recomendo a todos!"</p>
+      <h4>- Cliente Fictício 2</h4>
+    </div>
+  </div>
+</section>
+
+<!-- Skills / Tecnologias -->
+<section id="skills" class="section skills show">
+  <h1 class="section-title">Skills</h1>
+  <div class="skills-grid fade">
+    <div class="skill">HTML5</div>
+    <div class="skill">CSS3</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">WordPress</div>
+    <div class="skill">Figma</div>
+  </div>
+</section>
+
+<!-- Contato -->
+<section id="contact" class="section contact show">
+  <h1 class="section-title">Contato</h1>
+  <p class="section-text">Entre em contato conosco para transformar suas ideias em soluções digitais inovadoras!</p>
+  <form id="contact-form">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" placeholder="Seu nome" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Seu email" required>
+    <label for="message">Mensagem:</label>
+    <textarea id="message" name="message" rows="4" placeholder="Sua mensagem" required></textarea>
+    <button type="submit" class="btn">Enviar</button>
+  </form>
+</section>
+
+<!-- Modal de sucesso -->
+<div id="success-modal" class="modal">
+  <div class="modal-content">
+    <p>Obrigado! Sua mensagem foi enviada com sucesso.</p>
+    <button id="close-modal" class="btn">Fechar</button>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 NovaPixel. Todos os direitos reservados.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
